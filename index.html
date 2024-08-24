@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  
+  <style>
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+    :root{
+      --para-font: 16px;
+      --bck-color: white;
+      --young-serif-weigh: 400;
+      --outfit-weigh-normal: 400;
+      --outfit-weigh-wide-half: 600;
+      --outfit-weigh-wide: 700;
+      --border-radius: 10px;
+      --line-height: 2;
+    }
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+
+  span{ 
+    color: #5e5453;
+    font-weight: var(--outfit-weigh-wide-half);
+  }
+  body{
+    background-color: #f3e5d8;
+    font-family: 'Outfit', sans-serif;
+  }
+  h1,h2,h3{
+    font-family: "Young Serif" , serif;
+  }
+  .container{
+    width: 700px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    }
+    img{
+      width: 100%;
+      border-radius: var(--border-radius);
+      margin: 20px auto ;
+    }
+    h1{
+      font-size: 30px;
+      font-weight: var(--outfit-weigh-normal);
+    }
+    p{
+      font-size: var(--para-font);
+      line-height: var(--line-height);
+    }
+
+    .Preparation{
+      margin-top: 20px;
+      background-color: #fff7fc;
+      padding: 10px;
+      border-radius: var(--border-radius);
+      line-height: 2;
+    }
+    .Preparation h3{
+      font-weight: var(--outfit-weigh-wide);
+      color: #5b1c35;
+    }
+   .Preparation ul {
+    list-style-position: outside;
+    padding-left: 13px; 
+    margin-bottom: 15px;
+    margin-left: 15px;
+    line-height: var(--line-height);
+}
+    .Preparation ul li {
+      text-indent: 30px; 
+      color: #736969;
+    }
+    
+   .ingredients{
+    margin-top: 30px;
+    position: relative;
+  
+  }
+  .ingredients::after{ 
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 605px;
+    background: #efefef;
+    bottom: -20px;
+   }
+
+  .ingredients h2{
+    color: #834630 ;
+  }
+  .ingredients ul{
+    list-style-position: outside;
+    margin-left: 20px;
+    line-height: var(--line-height);
+  }
+  .ingredients ul li{
+    text-indent: 30px;
+    color: #736969;
+  }
+
+  .instructions{
+    margin: 40px auto  ;
+  }
+  .instructions::after{ 
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 607px;
+    background: #efefef;
+    top: 165%;
+   }
+  .instructions h2{
+    color: #834630;
+  }
+  .instructions ol{
+    list-style-position: outside;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 1.7;
+  }
+  .instructions ol li{
+    text-indent: 15px;
+    margin-bottom: 5px;
+    color: #736969 ;
+    font-weight: 400;
+  }
+
+  .nutrition{
+    padding-bottom: 10px;
+  }
+  .nutrition h2{
+    color: #834630;
+    margin-bottom: 40px;
+  }
+  .nutrition p{
+    color: #736969 ;
+  }
+  
+  .nutrition table{
+    width: 62%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    
+  }
+  .nutrition table tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    
+  }
+  .nutrition table td{
+    margin-bottom: 10px;
+  }
+  
+  .nutrition table tr:not(:first-child)::after{
+    content: '';
+    position: absolute;
+    width: 556px;
+    left: -13px;
+    top: -5px;
+    height: 2px;
+    background-color: #efefef;
+}
+
+@media () {
+  
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <img src="./assets/images/image-omelette.jpeg" width="600" alt="">
+    <h1>Simple Omelette Recipe</h1>
+    
+    <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+      to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+</p>
+<div class="Preparation">
+
+  <h3>Preparation time</h3>
+  <ul>
+    <li><span>Total: </span>Approximately 10 minutes</li>
+    <li><span>Preparation: </span>5 minutes</li>
+    <li><span>Cooking: </span>5 minutes</li>
+  </ul>
+</div>
+
+  <div class="ingredients">
+    <h2>Ingredients</h2>
+    <ul>
+      <li>2-3 large eggs</li>
+      <li>Salt, to taste</li>
+      <li>Pepper, to taste</li>
+      <li>1 tablespoon of butter or oil</li>
+    <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+  </ul>
+</div>
+ 
+<div class="instructions">
+  <h2>Instructions</h2>
+  
+  <ol>
+    <li><span>Beat the eggs:</span>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+      You can add a tablespoon of water or milk for a fluffier texture.</li>
+      <li><span>Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+    <li><span>Cook the omelette:</span>  Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+      the eggs evenly coat the surface.</li>
+      <li><span>Add fillings (optional):</span>  When the eggs begin to set at the edges but are still slightly runny in the 
+  middle, sprinkle your chosen fillings over one half of the omelette.</li>
+    <li><span>Fold and serve:</span>  As the omelette continues to cook, carefully lift one edge and fold it over the 
+      fillings. Let it cook for another minute, then slide it onto a plate.</li>
+      <li><span>Enjoy:</span>  Serve hot, with additional salt and pepper if needed.</li>
+    </ol>
+    
+  </div> 
+  
+  <div class="nutrition">
+    <h2>Nutrition</h2>
+    <p>The table below shows nutritional values per serving without the additional fillings.</p>    
+      <table>
+        <tr>
+        <td>Calories</td>
+        <td>277kcal</td>
+      </tr>
+      <tr>
+      <td>Carbs</td>
+      <td>0g</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>20g</td>
+    </tr>
+    <tr>
+      <td>Fat</td>
+      <td>22g</td>
+    </tr>
+  </table>
+</div>
+  
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
